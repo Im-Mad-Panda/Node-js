@@ -3,3 +3,5 @@ class Component {
       return "Test Component";
     }
   }
+
+  exports.Component = Component;

@@ -1,10 +1,5 @@
-const {MyMath} = require('./MyMath');
-const {Component} = require('./Component');
+const fs = require('fs').promises;
 
-
-
-const c = new Component();
-c.render();
-
-const res = MyMath.sum(3, 3);
-console.log('index.js');
+fs.readFile('./text.txt', 'utf8').then((data)=>{
+    console.log(data);
+})
